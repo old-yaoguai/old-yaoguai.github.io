@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>双向转写转换工具</title>
     <style>
+        @font-face {
+            font-family: 'Noto Sans Mongolian';
+            src: local('Noto Sans Mongolian'), 
+                local('NotoSansMongolian-Regular'),
+                url('fonts/NotoSansMongolian-Regular.otf') format('opentype'),
+                url('fonts/NotoSansMongolian-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
         * {
             box-sizing: border-box;
             margin: 0;
@@ -83,7 +93,7 @@
             padding: 12px;
             border: 2px solid #ddd;
             border-radius: 6px;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Noto Sans Mongolian', 'Courier New', Courier, monospace;
             font-size: 14px;
             resize: vertical;
             transition: border-color 0.3s;
@@ -204,7 +214,7 @@
             min-height: 100px;
             max-height: 300px;
             overflow-y: auto;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Noto Sans Mongolian', 'Courier New', Courier, monospace;
             white-space: pre-wrap;
             word-wrap: break-word;
         }
